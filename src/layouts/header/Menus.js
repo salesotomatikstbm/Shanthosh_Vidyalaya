@@ -100,5 +100,5 @@ export const Shop = () => (
   </Fragment>
 );
 
-export const About = () => <Link href="/about">About</Link>;
-export const Contact = () => <Link href="/contact">CONTACTS</Link>;
+export const About = () => <Link href="/about">About Us</Link>;
+export const Contact = () => <Link href="/contact">Contact Us</Link>;

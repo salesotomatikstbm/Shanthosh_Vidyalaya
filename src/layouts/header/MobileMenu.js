@@ -149,109 +149,43 @@ const MobileMenu = () => {
             </div>
           </div>
         </div>
-        <nav
-          id="mainnav-mobi"
-          className="mainnav st-2"
-          style={{ display: toggle ? "block" : "none" }}
-        >
-          <ul className="menu" id="mainnav">
-            <li className="menu-item-has-children">
-              <a href="#">Home</a>
-              <span
-                className={`btn-submenu ${activeBtn("Home")}`}
-                onClick={() => activeMenuSet("Home")}
-              />
+      <nav
+  id="mainnav-mobi"
+  className="mainnav st-2"
+  style={{ display: toggle ? "block" : "none" }}
+>
+  <ul className="menu">
+    {/* Home */}
+    <li className="menu-item-has-children">
+              <a href="/">Home</a>
+              
               <ul className="sub-menu" style={activeLi("Home")}>
                 <Home />
               </ul>
             </li>
-            <li className="menu-item">
-              <About />
-            </li>
-            
-            {/* <li className="menu-item-has-children">
-              <a>Academics
-              </a>
-              <span
-                className={`btn-submenu ${activeBtn("PAGES")}`}
-                onClick={() => activeMenuSet("PAGES")}
-              />
-              <ul className="sub-menu" style={activeLi("PAGES")}>
-                <li className="inner-menu-item">
-                  <a href="#">infrastructure
-                  </a>
-                  <span
-                    className="btn-submenu"
-                    onClick={() => setSub("Teachers", "PAGES")}
-                  />
-                  <ul className="sub-menu" style={activeSub("Teachers")}>
-                    <Teacher />
-                  </ul>
-                </li>
-                <li className="inner-menu-item ">
-                  <a href="#">Classes</a>
-                  <span
-                    className="btn-submenu"
-                    onClick={() => setSub("Classes", "PAGES")}
-                  />
-                  <ul className="sub-menu" style={activeSub("Classes")}>
-                    <Classes />
-                  </ul>
-                </li>
+    
+    {/* About */}
+    <li className="menu-item">
+      <About />
+    </li>
 
-                <li className="inner-menu-item">
-                  <a href="#">Events</a>
-                  <span
-                    className="btn-submenu"
-                    onClick={() => setSub("Events", "PAGES")}
-                  />
-                  <ul className="sub-menu" style={activeSub("Events")}>
-                    <Event />
-                  </ul>
-                </li>
-                <Pages />
-              </ul>
-            </li> */}
+    {/* Academics */}
+    <li className="menu-item">
+      <Link href="classes">Academics</Link>
+    </li>
 
-{/* 
-            <li className="menu-item-has-children">
-              <a>Infrastructure</a>
-              <span
-                className={`btn-submenu ${activeBtn("Programs")}`}
-                onClick={() => activeMenuSet("Programs")}
-              />
-              <ul className="sub-menu" style={activeLi("Programs")}>
-                <Program />
-              </ul>
-            </li> */}
+    {/* Infrastructure */}
+    <li className="menu-item">
+      <Link href="gallery">Infrastructure</Link>
+    </li>
 
+    {/* Contact */}
+    <li className="menu-item">
+      <Contact />
+    </li>
+  </ul>
+</nav>
 
-            {/* <li className="menu-item-has-children">
-              <a>BLOG</a>
-              <span
-                className={`btn-submenu ${activeBtn("BLOG")}`}
-                onClick={() => activeMenuSet("BLOG")}
-              />
-              <ul className="sub-menu" style={activeLi("BLOG")}>
-                <Blog />
-              </ul>
-            </li> */}
-            {/* <li className="menu-item-has-children">
-              <a>SHOP</a>
-              <span
-                className={`btn-submenu ${activeBtn("SHOP")}`}
-                onClick={() => activeMenuSet("SHOP")}
-              />
-              <ul className="sub-menu" style={activeLi("SHOP")}>
-                <Shop />
-              </ul>
-            </li> */}
-            <li className="inner">
-              <Contact />
-            </li>
-          </ul>
-          {/* /.menu */}
-        </nav>
       </div>
       <div style={{ display: "none" }} />
     </header>
