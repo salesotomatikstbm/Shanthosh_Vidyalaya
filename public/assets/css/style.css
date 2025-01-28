@@ -1843,6 +1843,38 @@ a:focus {
   }
    
 
+  /* Wp */
+  #wp-top {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px; /* Adjusted to match the button size */
+    height: 50px; /* Adjusted to match the button size */
+    text-align: center;
+    z-index: 999;
+    border-radius: 50%;
+    right: 30px; /* Adjusted to match the desired position */
+    bottom: 75px; /* Adjusted to match the desired position */
+    opacity: 0;
+    visibility: hidden;
+    cursor: pointer;
+    overflow: hidden;
+    background: var(--primary-color3); /* Ensure this variable is defined */
+    transition: opacity 0.3s ease, visibility 0.3s ease, bottom 0.3s ease; /* Added smooth transitions */
+  }
+  
+  #wp-top.show {
+    opacity: 1;
+    visibility: visible;
+  }
+  
+ 
+  
+  #wp-top img {
+    width: 30px; /* Adjusted image size */
+    height: 30px; /* Adjusted image size */
+  }
 /* Widget
 -------------------------------------------------------------- */
 #sidebar2 .widget,

@@ -5,6 +5,7 @@ import Footer from "./Footer";
 import Header from "./header/Header";
 import MobileMenu from "./header/MobileMenu";
 import ScrollTop from "./ScrollTop";
+import WhatsAppButton from "./WhatsAppButton";
 
 const Layout = ({ children, noHeader, noFooter, bodyClass }) => {
   useEffect(() => {
@@ -26,6 +27,7 @@ const Layout = ({ children, noHeader, noFooter, bodyClass }) => {
         {!noHeader && <Header />}
         <MobileMenu /> {children} {!noFooter && <Footer />}
       </div>
+      <WhatsAppButton />
       <ScrollTop />
     </div>
   );
